@@ -1,20 +1,8 @@
 @page {
   size: A4;
-  margin: 20mm; /* Márgenes del documento */
+  margin: 0; /* Márgenes del documento */
   
 }
-
-@media print {
-        body {
-          background: none;
-        }
-        .page {
-          page-break-after: always;
-        }
-      }
-
-
-
 /* Contenedor principal para asegurar que no se desborde */
 body {
   margin: 0;
