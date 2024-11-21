@@ -1,106 +1,153 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="utf-8" />
-  <title>NOTA DE ENTREGA</title>
-  <link rel="stylesheet" href="https://thefishermanpoint.github.io/Template/style.css" />
-</head>
-<body>
-  <header>
-    <h1>NOTA DE ENTREGA</h1>
-    <address>
-      <p>EL PUNTO DEL PESCADOR C.A</p>
-      <p>
-        RIF J-40901171-2<br />
-        Avenida Bermúdez, sector Puerto de Sucre, local 01 Edificio Basil.
-      </p>
-      <p>0414-8470329</p>
-      <p>E-mail: elpuntodelpescador@gmail.com</p>
-      <p>Cumana, Estado Sucre.</p>
-    </address>
-    <div style="float: right">
-      <img alt="Logo" src="https://acortar.link/3wPqjs" style="width: 150px; height: 150px;" />
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Informe Médico</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-gray-300 flex justify-center items-center py-8">
+    <!-- Contenedor principal simula una hoja A4 -->
+    <div
+      <div
+      class="relative bg-white shadow-lg p-8 max-w-[210mm] overflow-visible"
+    >
+      <!-- Marca de agua -->
+      <div class="absolute inset-0 flex justify-center items-center opacity-80">
+        <img
+          src="https://i.imgur.com/L4nVVpJ.jpg"
+          alt="Marca de agua"
+          class="w-4/5"
+        />
+      </div>
+
+      <!-- Encabezado -->
+      <header class="relative mb-8">
+        <div class="flex justify-between items-start">
+          <!-- Imagen del lado izquierdo del encabezado -->
+          <img
+            src="https://i.imgur.com/NwUXErv.jpg"
+            alt="Header Left"
+            class="w-3/4"
+          />
+          <!-- Imagen del lado derecho del encabezado -->
+          <img
+            src="https://i.imgur.com/Mvmmjg4.jpg"
+            alt="Header Right"
+            class="w-32"
+          />
+        </div>
+      </header>
+
+      <!-- Información de la consulta -->
+      <section class="mb-6">
+        <h2 class="text-lg font-semibold mb-2">Detalles de la Consulta</h2>
+        <p><strong>ID Consulta:</strong> &lt;&lt;[ID_CONSULTA]&gt;&gt;</p>
+        <p>
+          <strong>Cédula Paciente:</strong> &lt;&lt;[CEDULA_PACIENTE]&gt;&gt;
+        </p>
+        <p>
+          <strong>Fecha de Consulta:</strong> &lt;&lt;[FECHA_CONSULTA]&gt;&gt;
+        </p>
+        <p><strong>Procedimiento:</strong> &lt;&lt;[PROCEDIMIENTO]&gt;&gt;</p>
+        <p><strong>ID Institución:</strong> &lt;&lt;[ID_INSTITUCION]&gt;&gt;</p>
+      </section>
+
+      <!-- Diagnósticos -->
+      <section class="mb-6">
+        <h2 class="text-lg font-semibold mb-2">Diagnósticos</h2>
+        &lt;&lt;Start: [Related DIAGNOSTICOSs]&gt;&gt;
+        <p><strong>Diagnóstico:</strong> &lt;&lt;[DIAGNOSTICO]&gt;&gt;</p>
+        <p>
+          <strong>Fecha Diagnóstico:</strong>
+          &lt;&lt;[FECHA_DIAGNOSTICO]&gt;&gt;
+        </p>
+        <p><strong>Tratamiento:</strong> &lt;&lt;[TRATAMIENTO]&gt;&gt;</p>
+        &lt;&lt;End&gt;&gt;
+      </section>
+
+      <!-- Informes -->
+      <section class="mb-6">
+        <h2 class="text-lg font-semibold mb-2">Informes</h2>
+        &lt;&lt;Start: [Related INFORMESs]&gt;&gt;
+        <p><strong>ID Informe:</strong> &lt;&lt;[ID_INFORME]&gt;&gt;</p>
+        <p>
+          <strong>Cédula Paciente:</strong> &lt;&lt;[CEDULA_PACIENTE]&gt;&gt;
+        </p>
+        <p><strong>Cédula Doctor:</strong> &lt;&lt;[CEDULA_DOCTOR]&gt;&gt;</p>
+        <p><strong>Fecha Informe:</strong> &lt;&lt;[FECHA_INFORME]&gt;&gt;</p>
+        &lt;&lt;End&gt;&gt;
+      </section>
+
+      <!-- Exámenes Físicos -->
+      <section class="mb-6">
+        <h2 class="text-lg font-semibold mb-2">Exámenes Físicos</h2>
+        &lt;&lt;Start: [Related EXAMENES_FISICOSs]&gt;&gt;
+        <p><strong>Examen General:</strong> &lt;&lt;[EXAMEN_GENERAL]&gt;&gt;</p>
+        <p>
+          <strong>Examen Torácico:</strong> &lt;&lt;[EXAMEN_TORACICO]&gt;&gt;
+        </p>
+        <p>
+          <strong>Examen Abdominal:</strong> &lt;&lt;[EXAMEN_ABDOMINAL]&gt;&gt;
+        </p>
+        <p><strong>Examen Genital:</strong> &lt;&lt;[EXAMEN_GENITAL]&gt;&gt;</p>
+        &lt;&lt;End&gt;&gt;
+      </section>
+
+      <!-- Procedimientos Quirúrgicos -->
+      <section class="mb-6">
+        <h2 class="text-lg font-semibold mb-2">Procedimientos Quirúrgicos</h2>
+        &lt;&lt;Start: [Related PROCEDIMIENTOS_QUIRURGICOSs]&gt;&gt;
+        <p>
+          <strong>ID Procedimiento:</strong> &lt;&lt;[ID_PROCEDIMIENTO]&gt;&gt;
+        </p>
+        <p>
+          <strong>Descripción:</strong>
+          &lt;&lt;[DESCRIPCION_PROCEDIMIENTO]&gt;&gt;
+        </p>
+        <p>
+          <strong>Fecha Procedimiento:</strong>
+          &lt;&lt;[FECHA_PROCEDIMIENTO]&gt;&gt;
+        </p>
+        <p>
+          <strong>Cirujano Responsable:</strong>
+          &lt;&lt;[CIRUJANO_RESPONSABLE]&gt;&gt;
+        </p>
+        &lt;&lt;End&gt;&gt;
+      </section>
+
+      <!-- Finanzas -->
+      <section class="mb-6">
+        <h2 class="text-lg font-semibold mb-2">Finanzas</h2>
+        &lt;&lt;Start: [Related FINANZASs]&gt;&gt;
+        <p><strong>Fecha Pago:</strong> &lt;&lt;[FECHA_PAGO]&gt;&gt;</p>
+        <p><strong>Método de Pago:</strong> &lt;&lt;[METODO_PAGO]&gt;&gt;</p>
+        <p><strong>Monto Total:</strong> &lt;&lt;[MONTO_TOTAL]&gt;&gt;</p>
+        &lt;&lt;End&gt;&gt;
+      </section>
+
+      <!-- Ecografías -->
+      <section class="mb-6">
+        <h2 class="text-lg font-semibold mb-2">Ecografías</h2>
+        &lt;&lt;Start: [Related ECOGRAFIASs]&gt;&gt;
+        <p><strong>Ecografía:</strong> &lt;&lt;[TIPO_ECOGRAFIA]&gt;&gt;</p>
+        <p><strong>Detalles:</strong> &lt;&lt;[DETALLES]&gt;&gt;</p>
+        <p><strong>Resultado:</strong> &lt;&lt;[RESULTADO]&gt;&gt;</p>
+        &lt;&lt;End&gt;&gt;
+      </section>
+
+      <!-- Footer -->
+      <footer
+        <footer
+        class="relative border-t border-gray-300 pt-4 mt-8 text-center text-sm flex justify-end"
+      >
+        <img
+          src="https://i.imgur.com/4jmJUTz.jpg"
+          alt="Footer Right"
+          class="w-96"
+        />
+      </footer>
     </div>
-  </header>
-
-  <article>
-    <h1>Datos del Cliente</h1>
-    <div style="display: flex; justify-content: space-between;">
-      <address>
-        <p><strong>Cliente:</strong> <<[CLIENTE]>></p>
-        <p><strong>Cédula:</strong> <<[CEDULA_CLIENTE]>></p>
-        <p><strong>Barco:</strong> <<[BARCOS]>></p>
-      </address>
-
-      <table class="meta">
-        <tr>
-          <th><span>Número de Nota</span></th>
-          <td><span>&lt;&lt;[N_NOTA]&gt;&gt;</span></td>
-        </tr>
-        <tr>
-          <th><span>Fecha</span></th>
-          <td><span>&lt;&lt;[FECHA]&gt;&gt;</span></td>
-        </tr>
-        <tr>
-          <th><span>Total</span></th>
-          <td><span>&lt;&lt;[TOTAL]&gt;&gt;</span></td>
-        </tr>
-        <tr>
-          <th><span>Método de Pago</span></th>
-          <td><span>&lt;&lt;[METODO_PAGO]&gt;&gt;</span></td>
-        </tr>
-      </table>
-    </div>
-
-	<table class="inventory">
-	<thead>
-		<tr>
-		<th>Código</th>
-		<th>Artículo</th>
-		<th>Valor Unitario</th>
-		<th>Cantidad</th>
-		<th>Subtotal</th>
-		</tr>
-	</thead>
-	<tbody>
-		<<Start: [Related VENTASs]>>
-		<tr>
-		<td><span>&lt;&lt;[ID_ARTICULO]&gt;&gt;</span></td>
-		<td><span>&lt;&lt;[ARTICULO]&gt;&gt;</span></td>
-		<td><span>&lt;&lt;[PRECIO]&gt;&gt;</span></td>
-		<td><span>&lt;&lt;[UNIDADES]&gt;&gt;</span></td>
-		<td><span>&lt;&lt;[TOTAL]&gt;&gt;</span></td>
-		</tr>
-		<<End>>
-	</tbody>
-	</table>
-
-
-		<table class="balance">
-		<tr>
-			<th><span>Total Venta</span></th>
-			<td><span>&lt;&lt;[TOTAL]&gt;&gt;</span></td>
-		</tr>
-		<tr>
-			<th><span>Monto Pendiente</span></th>
-			<td><span>&lt;&lt;[MONTO_PENDIENTE]&gt;&gt;</span></td>
-		</tr>
-		<tr>
-			<th><span>Total a Pagar</span></th>
-			<td><span>&lt;&lt;[TOTAL] - [MONTO_PENDIENTE]&gt;&gt;</span></td>
-		</tr>
-		</table>
-
-  </article>
-
-  <aside>
-    <h1><span>Notas adicionales</span></h1>
-  <div>
-    <p><<[DETALLE]>></p>
-  </div>
-    <div>
-      <p>Vive la experiencia de ser un buen pescador...</p>
-    </div>
-  </aside>
-</body>
+  </body>
 </html>
